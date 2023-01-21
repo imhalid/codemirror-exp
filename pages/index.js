@@ -18,7 +18,7 @@ function Home() {
       extensions={[javascript({ jsx: true })]}
       onChange={onChange}
       />
-      <button onClick={() => eval(value)}>Click me</button>
+      <button onClick={() => new Function(value)()}>Click me</button>
     <ConsoleLog />
       </div>
   );
