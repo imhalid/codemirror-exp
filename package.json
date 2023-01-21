@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.1.4",
+    "@uiw/codemirror-extensions-basic-setup": "^4.19.7",
     "@uiw/codemirror-extensions-langs": "^4.19.7",
     "@uiw/react-codemirror": "^4.19.7",
     "next": "13.1.4",

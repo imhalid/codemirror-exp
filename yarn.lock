@@ -452,7 +452,7 @@
   dependencies:
     tslib "^2.4.0"
 
-"@uiw/codemirror-extensions-basic-setup@4.19.7":
+"@uiw/codemirror-extensions-basic-setup@4.19.7", "@uiw/codemirror-extensions-basic-setup@^4.19.7":
   version "4.19.7"
   resolved "https://registry.yarnpkg.com/@uiw/codemirror-extensions-basic-setup/-/codemirror-extensions-basic-setup-4.19.7.tgz#e50c542a1563f3194a64e1a272f5f33b0a3a9145"
   integrity sha512-pk0JTFJAZOGxouBB1pdBtb59qKibO9DW4hER4VSFGBGW3TBDeXUwL/gKujhRpySHG2MtG09cgt4a3XOFIWwXTw==
