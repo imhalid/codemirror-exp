@@ -18,10 +18,15 @@ console.log(animals.slice(2));
   )
 
   const isFunction = functionToCheck => {
-    if (!functionToCheck === Function) {
+    if (functionToCheck.includes('console')) {
       return new Function(functionToCheck)()
-    } else {
-      return console.log('Not a function')
+    } else if (
+      functionToCheck.includes('console') &&
+      typeof functionToCheck !== Function
+    ) {
+      return console.log('Syntax Error')
+    } else if (functionToCheck.includes('console') === false) {
+      return console.log('Miss Console Log')
     }
   }
 

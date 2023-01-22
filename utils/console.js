@@ -9,15 +9,14 @@ const ConsoleLog = () => {
         console.olog = function () {}
       }
       console.log = function () {
-        let consoleLog = document.querySelector('#consolelog')
+        let consoleLog = document.getElementById('consolelog')
         let p = document.createElement('p')
-
         for (let i = 0; i < arguments.length; i++) {
-          if (typeof arguments[i] === 'string') {
-            document.querySelector('#consolelog').innerHTML = ''
+          if (typeof arguments[i] !== undefined) {
+            consoleLog.innerHTML += ''
             p.innerHTML += '> ' + JSON.stringify(arguments[i], undefined, 2)
           } else {
-            p.innerHTML += arguments[i]
+            consoleLog.innerHTML += ''
           }
         }
         consoleLog.appendChild(p)
