@@ -9,15 +9,15 @@ const ConsoleLog = () => {
         console.olog = function () {}
       }
       console.log = function (message) {
-        let consolelog = document.querySelector('#consolelog')
+        let consoleLog = document.querySelector('#consolelog')
         let p = document.createElement('p')
         p.innerHTML = message
-        consolelog.appendChild(p)
+        consoleLog.appendChild(p)
       }
-      console.error = console.debug = console.info = console.log
+      console.log
     }
   }, [])
-    return <div id="consolelog" />
+  return <div id='consolelog' />
 }
 
 export default ConsoleLog
