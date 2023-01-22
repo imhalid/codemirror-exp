@@ -13,7 +13,7 @@ const ConsoleLog = () => {
         let p = document.createElement('p')
 
         for (let i = 0; i < arguments.length; i++) {
-          if (typeof arguments[i] === 'object') {
+          if (typeof arguments[i] === 'string') {
             document.querySelector('#consolelog').innerHTML = ''
             p.innerHTML += '> ' + JSON.stringify(arguments[i], undefined, 2)
           } else {
