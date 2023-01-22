@@ -8,16 +8,24 @@ const ConsoleLog = () => {
       } else {
         console.olog = function () {}
       }
-      console.log = function (message) {
+      console.log = function () {
         let consoleLog = document.querySelector('#consolelog')
         let p = document.createElement('p')
-        p.innerHTML = message
+
+        for (let i = 0; i < arguments.length; i++) {
+          if (typeof arguments[i] === 'object') {
+            document.querySelector('#consolelog').innerHTML = ''
+            p.innerHTML += '> ' + JSON.stringify(arguments[i], undefined, 2)
+          } else {
+            p.innerHTML += arguments[i]
+          }
+        }
         consoleLog.appendChild(p)
       }
       console.log
     }
   }, [])
-  return <div id='consolelog' />
+  return <code id='consolelog' />
 }
 
 export default ConsoleLog

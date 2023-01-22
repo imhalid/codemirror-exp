@@ -4,5 +4,5 @@
 
 .cm-scroller,
 .cm-editor {
-  @apply rounded-md;
+  @apply rounded-md min-h-[150px];
 }
