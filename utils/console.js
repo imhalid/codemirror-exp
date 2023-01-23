@@ -13,7 +13,6 @@ const ConsoleLog = () => {
         let p = document.createElement('p')
         for (let i = 0; i < arguments.length; i++) {
           if (typeof arguments[i] !== undefined) {
-            document.querySelector('#consolelog').innerHTML = ''
             p.innerHTML += '> ' + JSON.stringify(arguments[i], undefined, 2)
           } else {
             consoleLog.innerHTML += ''
